@@ -74,8 +74,8 @@ nnoremap qw :wa<CR>
 nnoremap qq :q<Enter>
 nnoremap nt :NERDTree<Enter>
 nnoremap tt :terminal<CR>
-nnoremap <C-k> :bnext<CR>
-nnoremap <C-j> :bprev<CR>
+nnoremap <S-k> :bnext<CR>
+nnoremap <S-j> :bprev<CR>
 
 nmap <C-c> \c<Space>
 vmap <C-c> \c<Space>
@@ -88,3 +88,5 @@ nmap <silent> gr <Plug>(coc-references)
 imap ii <Esc>
 imap oo <C-O>o
 imap vv <C-O>v
+imap NN <C-n>
+imap YY <C-y>
