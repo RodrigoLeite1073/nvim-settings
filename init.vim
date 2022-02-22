@@ -30,8 +30,20 @@ set foldmethod=indent
 " Plugins 
 call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'} 
-  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-  Plug 'junegunn/fzf.vim'
+"------------------------
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+  Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+  Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+  Plug 'neoclide/coc-emmet', {'do': 'yarn install --frozen-lockfile'}
+  Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+ " Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} " mru and stuff
+  Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} " color highlighting
+    
+"------------------------
+
+  "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  "Plug 'junegunn/fzf.vim'
   Plug 'mattn/emmet-vim'
   Plug 'preservim/nerdtree'
   Plug 'preservim/nerdcommenter'
@@ -39,7 +51,7 @@ call plug#begin()
   Plug 'vim-airline/vim-airline-themes'
   Plug 'ryanoasis/vim-devicons'
   Plug 'jiangmiao/auto-pairs'
-  Plug 'airblade/vim-gitgutter'
+  "Plug 'airblade/vim-gitgutter'
   Plug 'tpope/vim-fugitive'
  " Plug 'sainnhe/gruvbox-material'
   Plug 'joshdick/onedark.vim'
@@ -47,25 +59,26 @@ call plug#begin()
   Plug 'tomasiser/vim-code-dark'
   Plug 'Yggdroot/indentLine'
   Plug 'sheerun/vim-polyglot'
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+ "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'ap/vim-css-color'
 call plug#end()
 
 
 " Coc settings 
-let g:coc_global_extensions = ['coc-pyright', 'coc-css', 'coc-html', 'coc-tsserver', 'coc-emmet']
+"let g:coc_global_extensions = ['coc-pyright', 'coc-tsserver', 'coc-emmet']
 
-:let g:NERDTreeWinSize=15
+let g:NERDTreeWinSize=15
 
 let g:codedark_italics = 1
-let g:airline_theme = 'codedark'
+"let g:airline_theme = 'codedark'
 " other settings
 let g:airline#extensions#tabline#enabled = 1
 
 " set colorschemie
 let g:airline_theme = 'everforest'
 let g:everforest_background = 'hard'
-        colorscheme everforest
+
+colorscheme everforest
 
 nnoremap th gT
 nnoremap tl gt
