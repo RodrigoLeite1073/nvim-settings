@@ -74,6 +74,8 @@ let g:codedark_italics = 1
 " other settings
 let g:airline#extensions#tabline#enabled = 1
 
+ :let g:mapleader=','
+
 " set colorschemie
 let g:airline_theme = 'everforest'
 let g:everforest_background = 'hard'
@@ -83,23 +85,22 @@ colorscheme everforest
 nnoremap th gT
 nnoremap tl gt
 nnoremap tn :tabnew<CR>
-nnoremap qw :wa<CR>
-nnoremap qq :q<Enter>
+nnoremap <leader>w :wa<CR>
+nnoremap <leader>q :q<Enter>
 nnoremap nt :NERDTree<Enter>
-nnoremap tt :terminal<CR>
-nnoremap <S-k> :bnext<CR>
-nnoremap <S-j> :bprev<CR>
+nnoremap <leader>t :terminal<CR>
+nnoremap <leader>k :bnext<CR>
+nnoremap <leader>j :bprev<CR>
 
-nmap <C-c> \c<Space>
-vmap <C-c> \c<Space>
+nnoremap <leader>c \c<Space>
+vnoremap <leader>c \c<Space>
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-imap ii <Esc>
-imap oo <C-O>o
-imap vv <C-O>v
-imap NN <C-n>
-imap YY <C-y>
+imap <leader>m <Esc>
+imap <leader>o <C-O>
+imap <leader>n <C-n>
+imap <leader>y <C-y>
