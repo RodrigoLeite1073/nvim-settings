@@ -90,10 +90,10 @@ nnoremap <leader>q :q<Enter>
 nnoremap nt :NERDTree<Enter>
 nnoremap <leader>t :terminal<CR>
 nnoremap <leader>k :bnext<CR>
-nnoremap <leader>j :bprev<CR>
+nnoremap' <leader>j :bprev<CR>
 
-nnoremap <leader>c \c<Space>
-vnoremap <leader>c \c<Space>
+"nmap <leader>c <,>c<Space>
+"vmap <leader>c <,>c<Space>
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
@@ -101,6 +101,9 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 imap <leader>m <Esc>
+imap <leader>M <Esc>
 imap <leader>o <C-O>
-imap <leader>n <C-n>
-imap <leader>y <C-y>
+imap <Tab><Tab> <C-n>
+imap <CR> <C-y>
+"imap <leader>n <C-n>
+"imap <leader>y <C-y>
