@@ -90,7 +90,8 @@ nnoremap <leader>q :q<Enter>
 nnoremap nt :NERDTree<Enter>
 nnoremap <leader>t :terminal<CR>
 nnoremap <leader>k :bnext<CR>
-nnoremap' <leader>j :bprev<CR>
+nnoremap <leader>j :bprev<CR>
+nnoremap <leader>x :bw<CR>
 
 "nmap <leader>c <,>c<Space>
 "vmap <leader>c <,>c<Space>
@@ -103,7 +104,7 @@ nmap <silent> gr <Plug>(coc-references)
 imap <leader>m <Esc>
 imap <leader>M <Esc>
 imap <leader>o <C-O>
-imap <Tab><Tab> <C-n>
-imap <CR> <C-y>
+imap nn <Down>
+imap <leader>n <C-y>
 "imap <leader>n <C-n>
 "imap <leader>y <C-y>
