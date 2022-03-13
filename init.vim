@@ -104,7 +104,9 @@ nmap <silent> gr <Plug>(coc-references)
 imap <leader>m <Esc>
 imap <leader>M <Esc>
 imap <leader>o <C-O>
-imap nn <Down>
+imap mn <Down>
+imap <leader>l <C-O>$
+imap <leader>h <C-O>0
 imap <leader>n <C-y>
 "imap <leader>n <C-n>
 "imap <leader>y <C-y>
