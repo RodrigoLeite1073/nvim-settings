@@ -37,13 +37,7 @@ Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
   Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
   Plug 'neoclide/coc-emmet', {'do': 'yarn install --frozen-lockfile'}
   Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
- " Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} " mru and stuff
   Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} " color highlighting
-    
-"------------------------
-
-  "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-  "Plug 'junegunn/fzf.vim'
   Plug 'mattn/emmet-vim'
   Plug 'preservim/nerdtree'
   Plug 'preservim/nerdcommenter'
@@ -51,16 +45,16 @@ Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
   Plug 'vim-airline/vim-airline-themes'
   Plug 'ryanoasis/vim-devicons'
   Plug 'jiangmiao/auto-pairs'
-  "Plug 'airblade/vim-gitgutter'
   Plug 'tpope/vim-fugitive'
- " Plug 'sainnhe/gruvbox-material'
   Plug 'joshdick/onedark.vim'
   Plug 'sainnhe/everforest'
   Plug 'tomasiser/vim-code-dark'
   Plug 'Yggdroot/indentLine'
   Plug 'sheerun/vim-polyglot'
- "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'ap/vim-css-color'
+  Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 call plug#end()
 
 
