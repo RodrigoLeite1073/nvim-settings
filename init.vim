@@ -37,7 +37,6 @@ call plug#begin()
 "------------------------
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
-<<<<<<< HEAD
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-emmet', {'do': 'yarn install --frozen-lockfile'}
@@ -79,8 +78,8 @@ let g:airline#extensions#tabline#enabled = 1
 " set colorschemie
 let g:airline_theme = 'everforest'
 let g:everforest_background = 'hard'
-
 colorscheme everforest
+
 
 nnoremap th gT
 nnoremap tl gt
@@ -101,12 +100,10 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-imap <leader>m <Esc>
-imap <leader>M <Esc>
+imap <leader>, <Esc>
 imap <leader>o <C-O>
-imap mn <Down>
+imap <leader>. <Down>
 imap <leader>l <C-O>$
 imap <leader>h <C-O>0
-imap <leader>n <C-y>
 "imap <leader>n <C-n>
 "imap <leader>y <C-y>
