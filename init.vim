@@ -16,10 +16,12 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
-
+"mas espacio para notificacion coc
+set cmdheight=2
+set shortmess+=c
 " Basic settings 
 set encoding=utf-8
-set updatetime=100
+set updatetime=300
 set hidden
 set nobackup
 set nowritebackup
@@ -35,13 +37,13 @@ set background=dark
 call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'} 
 "------------------------
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
-Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-emmet', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} " color highlighting
+Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'} " color highlighting
+Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'} " color highlighting
 Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
@@ -60,6 +62,7 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile --production',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+Plug 'honza/vim-snippets'
 call plug#end()
 
 
